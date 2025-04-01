@@ -84,6 +84,9 @@ ruleTester.run("prefer-optional-chaining", rule, {
     {
       code: "a?.()",
     },
+    {
+      code: "a.b.c = true",
+    },
   ],
 
   invalid: [
@@ -316,7 +319,7 @@ ruleTester.run("prefer-optional-chaining", rule, {
           message: "Use optional chaining instead of regular property access.",
         },
       ],
-      output: "a?.b?.()",
+      output: "a?.b()",
     },
     {
       code: "a.b.c()",
@@ -328,7 +331,7 @@ ruleTester.run("prefer-optional-chaining", rule, {
           message: "Use optional chaining instead of regular property access.",
         },
       ],
-      output: "a?.b?.c?.()",
+      output: "a?.b?.c()",
     },
   ],
 });

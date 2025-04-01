@@ -1,14 +1,22 @@
 {
-  "name": "eslint-plugin-opt-chaining",
+  "name": "eslint-plugin-auto-optional-chaining",
   "version": "0.0.1",
-  "description": "Automatically replace . to ?.",
+  "description": "🛠 Automatically enforce optional chaining (?.) to prevent null/undefined errors in JavaScript/TypeScript.",
   "keywords": [
     "eslint",
     "eslintplugin",
     "eslint-plugin",
-    "optional-chaining"
+    "optional-chaining",
+    "null-safety",
+    "type-safe",
+    "javascript",
+    "typescript"
   ],
   "author": "saxibulidala",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GrapeWell/eslint-plugin-auto-optional-chaining"
+  },
   "main": "./lib/index.js",
   "exports": {
     ".": {
@@ -42,7 +50,7 @@
     "node": "^18.18.0 || ^20.9.0 || >=21.1.0"
   },
   "peerDependencies": {
-    "eslint": ">=0.8.0"
+    "eslint": ">=9.0.0"
   },
   "license": "MIT"
 }
