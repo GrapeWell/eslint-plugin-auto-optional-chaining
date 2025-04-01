@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-auto-optional-chaining",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "🛠 Automatically enforce optional chaining (?.) to prevent null/undefined errors in JavaScript/TypeScript.",
   "keywords": [
     "eslint",
